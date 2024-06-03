@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,32 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="media-query/style.css">
 </head>
+
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as  configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="enome" id="inome" placeholder="Nome Completo">
+                    </div>
+                    <div>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="esenha" id="isenha" required minlength="8">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
                 </form>
             </div>
         </section>
     </main>
 </body>
+
 </html>
